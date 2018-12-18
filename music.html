@@ -12,9 +12,9 @@
 
 <body>
 
-    <header>
-        <nav>
-
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="photo.html">Photos</a>
@@ -25,11 +25,11 @@
             <a href="news.html">News</a>
             <a href="concerts.html">Concerts</a>
             <a href="contact.html">Contact</a>
+        </div>
+    </div>
 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-        </nav>
-
-    </header>
 
     <main></main>
 
@@ -37,8 +37,8 @@
     <template id="musicTemplate">
         <article class="music">
             <img src="" alt="">
-            <h1 class="Title">TITLE</h1>
-            <p class="Body">BODY</p>
+            <h1 class="title">TITLE</h1>
+            <p class="body">BODY</p>
         </article>
     </template>
 

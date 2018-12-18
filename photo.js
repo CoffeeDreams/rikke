@@ -1,4 +1,15 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
 const template_photo = document.querySelector("#photoTemplate").content;
+
 
 const main = document.querySelector("main");
 
@@ -17,7 +28,7 @@ function showSinglePhoto(photo) {
     const copy = template_photo.cloneNode(true);
 
     copy.querySelector(".photographer").textContent = photo.acf.photographer;
-    copy.querySelector(".description").innerHTML = photo.acf.description;
+    copy.querySelector(".body").innerHTML = photo.content.rendered;
 
     copy.querySelector("img").src = photo._embedded["wp:featuredmedia"]
     [0].media_details.sizes.medium.source_url;
