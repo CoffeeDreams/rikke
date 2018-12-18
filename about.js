@@ -1,3 +1,12 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
 //https://www.majabay.dk/kea/wordpress_rikke/wp-admin/index.php
 
 //https://majabay.dk/kea/wordpress_rikke/wp-json/wp/v2/
@@ -32,6 +41,5 @@ function showSingleAbout(about) {
 
     main.appendChild(copy)
 }
-
 
 getAbout();

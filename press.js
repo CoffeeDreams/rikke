@@ -1,3 +1,15 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
+
+
 const template_press = document.querySelector("#pressTemplate").content;
 
 const main = document.querySelector("main");
