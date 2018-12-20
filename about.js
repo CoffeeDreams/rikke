@@ -34,7 +34,7 @@ function showSingleAbout(about) {
 
     copy.querySelector(".title").textContent = about.title.rendered;
 
-    copy.querySelector(".body").innerHTML = about.content.rendered;
+    copy.querySelector(".bodyText").innerHTML = about.content.rendered;
 
     //copy.querySelector("img").src = concert._embedded["wp:featuredmedia"]
     //[0].media_details.sizes.medium.source_url;

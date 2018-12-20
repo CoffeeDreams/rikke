@@ -8,7 +8,6 @@ function closeNav() {
 
 
 
-
 const template_index = document.querySelector("#indexTemplate").content;
 
 const main = document.querySelector("main");

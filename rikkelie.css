@@ -3,47 +3,179 @@
 }
 
 body {
-  font-family: 'josefin sans', sans-serif;
+
+    font-family: 'josefin sans', sans-serif;
+    margin: 0;
 }
 
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 60vh;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    grid-area: logo;
+    height: 75px;
+    padding: 10px;
+    font-family: dawning of a new day, serif;
+    font-size: 10vw;
+    color: #577178;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+
+}
+
+header {
+
+    height: 200px;
+    width: 400px;
+    background-image: url(images/home.png);
+    background-repeat: no-repeat;
+}
+
+.title {
+    grid-area: title;
+    padding: 10px;
+    color: #577178;
+    height: 50px;
+    text-align: left;
+}
+
+
+.intro {
+
+    width: 400px;
+    height: 330px;
+    color: #577178;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin: 0;
+
+}
+
+
+
+.body {
+    width: 100%;
+    grid-area: body;
+    height: auto;
+    color: #577178;
+    padding: 7px;
+
+}
+
+#details {
+    width: 100%;
+    grid-area: body;
+    height: auto;
+    color: #577178;
+    margin: 7px;
+}
+
+.burger1 {
+    display: grid;
+    grid-template-areas:
+        'burger arrow some'
+}
+
+
+.burgeren {
+    grid-area: burger;
+    color: #577178;
+    position: relative;
+}
+
+
+i {
+    border: solid #577178;
+    border-width: 0 5px 5px 0;
+
+    display: inline-block;
+    padding: 10px;
+    margin-left: 75px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.fa {
+
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #577178;
+}
+
+.postImg {
+    width: 300px;
+    height: 100%;
+    margin: 35px;
+}
+
+
+
+
+/* Burger menu*/
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #F2D9C2;
-  background-color: #F2D9C2;
-  overflow-x: hidden;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F2D9C2;
+    background-color: #F2D9C2;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 5%;
-  width: 100%;
-  text-align: left;
-  margin-top: 10px;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+
 }
 
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #577178;
-  display: block;
-  transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 8vw;
+    color: #577178;
+    display: block;
+    transition: 0.3s;
+
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: left;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
 
+    font-size: 60px;
+    grid-area: nav2;
+    margin-top: 50px;
+}
